@@ -1,0 +1,327 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:engineering
+LIBS:4x4 I2C Keyboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "4x4 I2C Keyboard"
+Date "2017-03-09"
+Rev "1"
+Comp "Io Engineering"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Licensed under CERN OHL v.1.2 or later"
+$EndDescr
+$Comp
+L MSP430G2553-20 U1
+U 1 1 58BF2D71
+P 4450 2750
+F 0 "U1" H 4450 3350 60  0000 C CNN
+F 1 "MSP430G2553-20" H 4450 2150 60  0000 C CNN
+F 2 "Housings_DIP:DIP-20_W7.62mm_Socket" H 4450 2550 60  0001 C CNN
+F 3 "" H 4450 2550 60  0000 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X10 P2
+U 1 1 58BF2DBC
+P 4800 4500
+F 0 "P2" H 4800 5050 50  0000 C CNN
+F 1 "KEYBOARD" V 4900 4500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 4800 4500 50  0001 C CNN
+F 3 "" H 4800 4500 50  0000 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 58BF2EB1
+P 4100 4200
+F 0 "D1" H 4000 4250 50  0000 C CNN
+F 1 "1N4148" H 4100 4100 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4100 4200 50  0001 C CNN
+F 3 "" H 4100 4200 50  0000 C CNN
+	1    4100 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D2
+U 1 1 58BF2F5B
+P 4100 4400
+F 0 "D2" H 4000 4450 50  0000 C CNN
+F 1 "1N4148" H 3900 4350 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4100 4400 50  0001 C CNN
+F 3 "" H 4100 4400 50  0000 C CNN
+	1    4100 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D4
+U 1 1 58BF2F83
+P 4100 4800
+F 0 "D4" H 4000 4850 50  0000 C CNN
+F 1 "1N4148" H 4100 4950 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4100 4800 50  0001 C CNN
+F 3 "" H 4100 4800 50  0000 C CNN
+	1    4100 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D3
+U 1 1 58BF2FCA
+P 4100 4600
+F 0 "D3" H 4000 4650 50  0000 C CNN
+F 1 "1N4148" H 3900 4550 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4100 4600 50  0001 C CNN
+F 3 "" H 4100 4600 50  0000 C CNN
+	1    4100 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C1
+U 1 1 58BF3028
+P 5500 2750
+F 0 "C1" H 5525 2850 50  0000 L CNN
+F 1 "1nF" H 5525 2650 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5538 2600 50  0001 C CNN
+F 3 "" H 5500 2750 50  0000 C CNN
+	1    5500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58BF3073
+P 5200 2000
+F 0 "R1" V 5280 2000 50  0000 C CNN
+F 1 "47K" V 5200 2000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 2000 50  0001 C CNN
+F 3 "" H 5200 2000 50  0000 C CNN
+	1    5200 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X05 P1
+U 1 1 58BF30BE
+P 1850 2700
+F 0 "P1" H 1850 3000 50  0000 C CNN
+F 1 "I2C" V 1950 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1850 2700 50  0001 C CNN
+F 3 "" H 1850 2700 50  0000 C CNN
+	1    1850 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 P3
+U 1 1 58BF3143
+P 5900 2400
+F 0 "P3" H 5900 2600 50  0000 C CNN
+F 1 "SBW" V 6000 2400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5900 2400 50  0001 C CNN
+F 3 "" H 5900 2400 50  0000 C CNN
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+Text Label 4600 4050 2    60   ~ 0
+COL0
+Text Label 4600 4150 2    60   ~ 0
+COL1
+Text Label 4600 4850 2    60   ~ 0
+COL2
+Text Label 4600 4950 2    60   ~ 0
+COL3
+Text Label 3950 4200 2    60   ~ 0
+ROW0
+Text Label 3950 4400 2    60   ~ 0
+ROW1
+Text Label 3950 4600 2    60   ~ 0
+ROW2
+Text Label 3950 4800 2    60   ~ 0
+ROW3
+Text Label 3950 3200 2    60   ~ 0
+COL0
+Text Label 4950 3200 0    60   ~ 0
+COL1
+Text Label 4950 3100 0    60   ~ 0
+COL2
+Text Label 4950 3000 0    60   ~ 0
+COL3
+Text Label 3950 2400 2    60   ~ 0
+ROW0
+Text Label 3950 2500 2    60   ~ 0
+ROW1
+Text Label 3950 2600 2    60   ~ 0
+ROW2
+Text Label 3950 2700 2    60   ~ 0
+ROW3
+Text Label 2050 2800 0    60   ~ 0
+SCL
+Text Label 2050 2700 0    60   ~ 0
+SDA
+Text Label 2050 2600 0    60   ~ 0
+~INT
+$Comp
+L GND #PWR2
+U 1 1 58BF41D1
+P 2050 3000
+F 0 "#PWR2" H 2050 2750 50  0001 C CNN
+F 1 "GND" H 2050 2850 50  0000 C CNN
+F 2 "" H 2050 3000 50  0000 C CNN
+F 3 "" H 2050 3000 50  0000 C CNN
+	1    2050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2900 2050 3000
+$Comp
+L +3V3 #PWR1
+U 1 1 58BF4226
+P 2050 2400
+F 0 "#PWR1" H 2050 2250 50  0001 C CNN
+F 1 "+3V3" H 2050 2540 50  0000 C CNN
+F 2 "" H 2050 2400 50  0000 C CNN
+F 3 "" H 2050 2400 50  0000 C CNN
+	1    2050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2500 2050 2400
+Wire Wire Line
+	4950 2400 5700 2400
+Wire Wire Line
+	4950 2500 5700 2500
+Wire Wire Line
+	5500 2000 5500 2600
+Wire Wire Line
+	5500 2900 5500 3100
+$Comp
+L GND #PWR4
+U 1 1 58BF47A6
+P 5500 3100
+F 0 "#PWR4" H 5500 2850 50  0001 C CNN
+F 1 "GND" H 5500 2950 50  0000 C CNN
+F 2 "" H 5500 3100 50  0000 C CNN
+F 3 "" H 5500 3100 50  0000 C CNN
+	1    5500 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 2500
+Wire Wire Line
+	3900 2300 3950 2300
+Wire Wire Line
+	3900 1900 3900 2300
+Text Label 3950 3000 2    60   ~ 0
+SDA
+Text Label 3950 3100 2    60   ~ 0
+SCL
+Text Label 4950 2900 0    60   ~ 0
+~INT
+NoConn ~ 4600 4350
+NoConn ~ 4600 4650
+NoConn ~ 4950 2600
+NoConn ~ 4950 2700
+NoConn ~ 4950 2800
+NoConn ~ 3950 2800
+NoConn ~ 3950 2900
+Wire Wire Line
+	4950 2300 5700 2300
+Wire Wire Line
+	5300 2300 5300 3000
+Connection ~ 5500 3000
+$Comp
+L +3V3 #PWR3
+U 1 1 58BF4DC3
+P 3900 1900
+F 0 "#PWR3" H 3900 1750 50  0001 C CNN
+F 1 "+3V3" H 3900 2040 50  0000 C CNN
+F 2 "" H 3900 1900 50  0000 C CNN
+F 3 "" H 3900 1900 50  0000 C CNN
+	1    3900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58BFA5F3
+P 2450 2700
+F 0 "C2" H 2475 2800 50  0000 L CNN
+F 1 "100nF" H 2475 2600 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2488 2550 50  0001 C CNN
+F 3 "" H 2450 2700 50  0000 C CNN
+	1    2450 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2450 2450 2450
+Wire Wire Line
+	2450 2450 2450 2550
+Connection ~ 2050 2450
+Wire Wire Line
+	2050 2950 2450 2950
+Wire Wire Line
+	2450 2950 2450 2850
+Connection ~ 2050 2950
+Connection ~ 5300 2300
+Wire Wire Line
+	5300 3000 5500 3000
+Wire Wire Line
+	5500 2000 5350 2000
+Wire Wire Line
+	5050 2000 3900 2000
+Connection ~ 3900 2000
+Wire Wire Line
+	4250 4800 4300 4800
+Wire Wire Line
+	4300 4800 4300 4750
+Wire Wire Line
+	4300 4750 4600 4750
+Wire Wire Line
+	4250 4200 4300 4200
+Wire Wire Line
+	4300 4200 4300 4250
+Wire Wire Line
+	4300 4250 4600 4250
+Wire Wire Line
+	4250 4400 4550 4400
+Wire Wire Line
+	4550 4400 4550 4450
+Wire Wire Line
+	4550 4450 4600 4450
+Wire Wire Line
+	4250 4600 4550 4600
+Wire Wire Line
+	4550 4600 4550 4550
+Wire Wire Line
+	4550 4550 4600 4550
+$EndSCHEMATC
